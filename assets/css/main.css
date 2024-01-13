@@ -336,7 +336,16 @@ button {
   text-align: center;
 }
 
-.main .main_content .benefits .benefits__title {
+.main .main_top {
+  margin-bottom: 110px;
+  background-image: url("/assets/image/back/main back.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.main .main_top .benefits {
+  margin-bottom: 120px;
+}
+.main .main_top .benefits .benefits__title {
   color: var(--1TCA-BLack, #212529);
   font-size: 36px;
   font-weight: 600;
@@ -345,7 +354,7 @@ button {
   text-align: center;
   margin-bottom: 20px;
 }
-.main .main_content .benefits .benefits__subtitle {
+.main .main_top .benefits .benefits__subtitle {
   color: #999;
   text-align: center;
   font-family: "Metropolis";
@@ -354,20 +363,20 @@ button {
   line-height: 26px;
   margin-bottom: 45px;
 }
-.main .main_content .benefits .row {
+.main .main_top .benefits .row {
   display: flex;
   justify-content: center;
 }
-.main .main_content .benefits .row .benefits_card {
+.main .main_top .benefits .row .benefits_card {
   max-width: 334px;
   max-height: 334px;
   padding: 31px 24px 47px 29px;
   border-radius: 10px;
-  border: 1px solid #6F7074;
   border: 1px solid rgba(111, 112, 116, 0.2);
+  background: #FFF;
   transition: fill 0.8s ease;
 }
-.main .main_content .benefits .row .benefits_card .benefits_card__obj {
+.main .main_top .benefits .row .benefits_card .benefits_card__obj {
   width: 62px;
   height: 62px;
   border-radius: 8px;
@@ -376,11 +385,11 @@ button {
   margin-bottom: 36px;
   transition: fill 0.8s ease;
 }
-.main .main_content .benefits .row .benefits_card .benefits_card__obj .benefits_svg > svg {
+.main .main_top .benefits .row .benefits_card .benefits_card__obj .benefits_svg > svg {
   fill: white;
   transition: fill 0.8s ease;
 }
-.main .main_content .benefits .row .benefits_card .benefits_card__title {
+.main .main_top .benefits .row .benefits_card .benefits_card__title {
   color: #000;
   font-size: 22px;
   font-weight: 500;
@@ -388,7 +397,7 @@ button {
   margin-bottom: 14px;
   transition: fill 0.8s ease;
 }
-.main .main_content .benefits .row .benefits_card .benefits_card__subtitle {
+.main .main_top .benefits .row .benefits_card .benefits_card__subtitle {
   color: #6F7074;
   font-size: 15px;
   font-weight: 400;
@@ -396,40 +405,106 @@ button {
   margin-bottom: 23px;
   transition: fill 0.8s ease;
 }
-.main .main_content .benefits .row .benefits_card .benefits_card__link {
+.main .main_top .benefits .row .benefits_card .benefits_card__link {
   color: #212529;
   font-size: 16px;
   font-weight: 500;
   line-height: 15px;
   transition: fill 0.8s ease;
 }
-.main .main_content .benefits .row .benefits_card .benefits_card__link .benefits_card__black {
+.main .main_top .benefits .row .benefits_card .benefits_card__link .benefits_card__black {
   margin-left: 7px;
   transition: fill 0.8s ease;
 }
-.main .main_content .benefits .row .benefits_card .benefits_card__link .benefits_card__white {
+.main .main_top .benefits .row .benefits_card .benefits_card__link .benefits_card__white {
   display: none;
   margin-left: 7px;
   transition: fill 0.8s ease;
 }
-.main .main_content .benefits .row .benefits_card:hover {
+.main .main_top .benefits .row .benefits_card:hover {
   background-color: #006FF9;
 }
-.main .main_content .benefits .row .benefits_card:hover .benefits_card__obj {
+.main .main_top .benefits .row .benefits_card:hover .benefits_card__obj {
   background-color: white;
 }
-.main .main_content .benefits .row .benefits_card:hover .benefits_card__title, .main .main_content .benefits .row .benefits_card:hover .benefits_card__link {
+.main .main_top .benefits .row .benefits_card:hover .benefits_card__title, .main .main_top .benefits .row .benefits_card:hover .benefits_card__link {
   color: white;
 }
-.main .main_content .benefits .row .benefits_card:hover .benefits_svg path {
+.main .main_top .benefits .row .benefits_card:hover .benefits_svg path {
   fill: #006FF9;
 }
-.main .main_content .benefits .row .benefits_card:hover .benefits_card__subtitle {
+.main .main_top .benefits .row .benefits_card:hover .benefits_card__subtitle {
   color: #FAFAFA;
 }
-.main .main_content .benefits .row .benefits_card:hover .benefits_card__black {
+.main .main_top .benefits .row .benefits_card:hover .benefits_card__black {
   display: none;
 }
-.main .main_content .benefits .row .benefits_card:hover .benefits_card__white {
+.main .main_top .benefits .row .benefits_card:hover .benefits_card__white {
   display: inline;
+}
+.main .main_top .contact .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .main_top .contact .row .contact_image {
+  padding-top: 26px;
+  max-width: 520px;
+  height: 520px;
+  background-image: url("/assets/image/back/main circle back.png");
+  background-repeat: no-repeat;
+  background-size: 520px;
+  background-position: center;
+  position: relative;
+}
+.main .main_top .contact .row .contact_image .contact_image__under {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  margin-left: 40px;
+  width: 323px;
+  height: 394px;
+}
+.main .main_top .contact .row .contact_image .contact_image__above {
+  position: absolute;
+  z-index: 4;
+  bottom: 10px;
+  right: 50px;
+  width: 267px;
+  height: 209px;
+}
+.main .main_top .contact .row .contact_info {
+  max-width: 465px;
+}
+.main .main_top .contact .row .contact_info .contact_info__abovetitle {
+  color: #006FF9;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.main .main_top .contact .row .contact_info .contact_info__title {
+  color: var(--1TCA-BLack, #212529);
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 16px;
+}
+.main .main_top .contact .row .contact_info .contact_info__subtitle {
+  color: var(--1TCA-Ash, #6F7074);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 35px;
+}
+.main .main_top .contact .row .contact_info .benefits_card__link {
+  color: var(--1TCA-BLack, #212529);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 15px;
+}
+.main .main_top .contact .row .contact_info .contact_info__arrow {
+  margin-left: 7px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,6 +1,11 @@
 .main{
-    .main_content{
+    .main_top{
+        margin-bottom: 110px;
+        background-image: url("/assets/image/back/main\ back.svg");
+        background-position: right;
+        background-repeat: no-repeat;
         .benefits{
+            margin-bottom: 120px;
             .benefits__title{
                 color: var(--1TCA-BLack, #212529);
                 font-size: 36px;
@@ -27,8 +32,8 @@
                     max-height: 334px;
                     padding: 31px 24px 47px 29px;
                     border-radius: 10px;
-                    border: 1px solid #6F7074;
-                    border: 1px solid rgba(111, 112, 116, 0.2);
+                    border: 1px solid rgba(111, 112, 116, 0.20);
+                    background: #FFF;
                     transition: fill 0.8s ease;
                     .benefits_card__obj{
                         width: 62px;
@@ -99,6 +104,74 @@
                         display: inline;
                     }
     
+                }
+            }
+        }
+        .contact{
+            .row{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .contact_image{
+                    padding-top: 26px;
+                    max-width: 520px;
+                    height: 520px;
+                    background-image: url('/assets/image/back/main\ circle\ back.png');
+                    background-repeat: no-repeat;
+                    background-size: 520px;
+                    background-position: center;
+                    position: relative;
+                    .contact_image__under{
+                        position: absolute;
+                        top: 20px;
+                        left: 0;
+                        margin-left: 40px;
+                        width: 323px;
+                        height: 394px;
+                    }
+                    .contact_image__above{
+                        position: absolute;
+                        z-index: 4;
+                        bottom: 10px;
+                        right: 50px;
+                        width: 267px;
+                        height: 209px;
+                    }
+                }
+                .contact_info{
+                    max-width: 465px;
+                    .contact_info__abovetitle{
+                        color: #006FF9;
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 18px;
+                        letter-spacing: 2px;
+                        text-transform: uppercase;
+                        margin-bottom: 14px;
+                    }
+                    .contact_info__title{
+                        color: var(--1TCA-BLack, #212529);
+                        font-size: 26px;
+                        font-weight: 600;
+                        line-height: 36px;
+                        margin-bottom: 16px;
+                    }
+                    .contact_info__subtitle{
+                        color: var(--1TCA-Ash, #6F7074);
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 28px;
+                        margin-bottom: 35px;
+                    }
+                    .benefits_card__link{
+                        color: var(--1TCA-BLack, #212529);
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 15px;
+                    }
+                    .contact_info__arrow{
+                        margin-left: 7px;
+                    }
                 }
             }
         }
