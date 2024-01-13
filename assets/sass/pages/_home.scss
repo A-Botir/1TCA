@@ -197,14 +197,15 @@
                 .gallery_card__subtitle{
                     color: var(--1TCA-Ash, #6F7074);
                     text-align: center;
+                    max-width: 270px;
+                    margin: 0;
                     font-size: 16px;
                     font-weight: 400;
                     line-height: 24px;
-                    margin-bottom: 20px;
-                    max-width: 270px;
                 }
                 .gallery_card__link{
                     @include dFlex;
+                    margin-top: 20px;
                     .gallery_card__btn{
                         border-radius: 4px;
                         background:  #006FF9;
@@ -224,5 +225,56 @@
                 }
             }
         }
+    }
+    .main_bottom{
+        .advertising{
+            margin-bottom: 120px;
+            .row{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .advertising_info{
+                    margin-top: 20px;
+                    max-width: 454px;
+                    .advertising_info__title{
+                        color: var(--1TCA-BLack, #212529);
+                        font-size: 36px;
+                        font-weight: 600;
+                        line-height: normal;
+                        text-transform: capitalize;
+                        margin-bottom: 21px;
+                        max-width: 310px;
+                    }
+                    .advertising_info__list{
+                        padding-left: 0;
+                        .advertising_info__item{
+                            padding-left: 20px;
+                            background: url('/assets/image/icon/list\ item.svg') no-repeat left center;
+                            background-size: 16px;
+                            color: var(--1TCA-Ash, #6F7074);
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 36px; /* 225% */
+                        }
+                    }
+                }
+                .advertising_photo{
+                    position: relative;
+                    .advertising_photo__under{
+                        width: 451px;
+                        height: 510px; 
+                    }
+                    .advertising_photo__above{
+                        position: absolute;
+                        width: 172px;
+                        height: 172px;
+                        left: -40px;
+                        bottom: -60px;
+
+                    }
+                }
+            }
+        }
+        
     }
 }
