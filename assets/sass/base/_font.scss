@@ -7,6 +7,14 @@
 }
 
 @font-face {
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: 300;
+    src:  local('Metropolis Light'),
+    url('/assets/font/Metropolis/metropolis_light.otf') format('opentype');
+}
+
+@font-face {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
