@@ -638,9 +638,20 @@ button {
   position: relative;
   border-radius: 10px;
   background-color: #FFF;
-  box-shadow: drop-shadow(0px 30px 40px rgba(212, 217, 232, 0.2));
+  box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.2);
   padding: 60px 30px 35px 30px;
   margin-bottom: 30px;
+}
+.main .main_bottom .review .row .review_card .review_card__top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.2);
+  z-index: -1;
 }
 .main .main_bottom .review .row .review_card .review_card__top .review_card__text {
   color: var(--Text-Gray-900, #18191F);
