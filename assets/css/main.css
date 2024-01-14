@@ -660,16 +660,18 @@ button {
   font-weight: 400;
   line-height: 24px;
 }
-.main .main_bottom .review .row .review_card .review_card__top .review_card__icon {
+.main .main_bottom .review .row .review_card .review_card__top .review_card__object {
   position: absolute;
   top: -20px;
   left: 45%;
-  width: 54px;
-  height: 54px;
+  max-width: 54px;
+  max-height: 54px;
   background-color: #FFF;
-  box-shadow: drop-shadow(0px 20px 40px rgba(213, 214, 218, 0.4));
+  box-shadow: 0px 20px 40px rgba(213, 214, 218, 0.4);
   padding: 12px 9px;
-  border-radius: 10%;
+  border-radius: 50%;
+}
+.main .main_bottom .review .row .review_card .review_card__top .review_card__icon {
   -o-object-fit: cover;
      object-fit: cover;
 }

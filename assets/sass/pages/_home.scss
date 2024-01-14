@@ -321,18 +321,22 @@
                             font-weight: 400;
                             line-height: 24px;
                         }
-                        .review_card__icon{
+                        .review_card__object{
                             position: absolute;
                             top: -20px;
                             left: 45%;
-                            width: 54px;
-                            height: 54px;
+                            max-width: 54px;
+                            max-height: 54px;
                             background-color: #FFF;
-                            box-shadow: drop-shadow(0px 20px 40px rgba(213, 214, 218, 0.40));
+                            -webkit-box-shadow: 0px 20px 40px rgba(213, 214, 218, 0.40);
+                            -moz-box-shadow: 0px 20px 40px rgba(213, 214, 218, 0.40);
+                            box-shadow: 0px 20px 40px rgba(213, 214, 218, 0.40);
                             padding: 12px 9px;
-                            border-radius: 10%;
-                            object-fit: cover;
+                            border-radius: 50%;
                         }
+                        .review_card__icon { 
+                            object-fit: cover;
+                          }
                     }
                     .review_card__bott{
                         @include dFlex( center, center);
