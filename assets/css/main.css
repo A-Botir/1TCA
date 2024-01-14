@@ -16,6 +16,11 @@
   padding: 0;
 }
 
+.row {
+  display: flex;
+  justify-content: center;
+}
+
 a {
   margin: 0;
   text-decoration: none;
@@ -336,6 +341,9 @@ button {
   text-align: center;
 }
 
+.main {
+  padding-bottom: 294px;
+}
 .main .main_top {
   margin-bottom: 110px;
   background-image: url("/assets/image/back/main back.svg");
@@ -512,10 +520,6 @@ button {
   padding: 80px 0 100px 0;
   background-color: #F4F9FE;
 }
-.main .gallery .row {
-  display: flex;
-  justify-content: center;
-}
 .main .gallery .row .gallery_card {
   max-width: 350px;
 }
@@ -586,7 +590,7 @@ button {
 }
 .main .main_bottom .advertising .row .advertising_info .advertising_info__list .advertising_info__item {
   padding-left: 20px;
-  background: url("/assets/image/icon/list item.svg") no-repeat left center;
+  background: url("/assets/image/icon/list icon.svg") no-repeat left center;
   background-size: 16px;
   color: var(--1TCA-Ash, #6F7074);
   font-size: 16px;
@@ -606,4 +610,132 @@ button {
   height: 172px;
   left: -40px;
   bottom: -60px;
+}
+.main .main_bottom .review .review_title {
+  color: var(--1TCA-BLack, #212529);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.main .main_bottom .review .review_subtitle {
+  color: #999;
+  font-family: "Metropolis";
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 60px;
+}
+.main .main_bottom .review .row {
+  margin-bottom: 40px;
+}
+.main .main_bottom .review .row .review_card {
+  max-width: 370px;
+}
+.main .main_bottom .review .row .review_card .review_card__top {
+  position: relative;
+  border-radius: 10px;
+  background-color: #FFF;
+  box-shadow: drop-shadow(0px 30px 40px rgba(212, 217, 232, 0.2));
+  padding: 60px 30px 35px 30px;
+  margin-bottom: 30px;
+}
+.main .main_bottom .review .row .review_card .review_card__top .review_card__text {
+  color: var(--Text-Gray-900, #18191F);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.main .main_bottom .review .row .review_card .review_card__top .review_card__icon {
+  position: absolute;
+  top: -20px;
+  left: 45%;
+  width: 54px;
+  height: 54px;
+  background-color: #FFF;
+  box-shadow: drop-shadow(0px 20px 40px rgba(213, 214, 218, 0.4));
+  padding: 12px 9px;
+  border-radius: 10%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .main_bottom .review .row .review_card .review_card__bott {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main .main_bottom .review .row .review_card .review_card__bott .review_card__circle {
+  max-width: 56px;
+  max-height: 56px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 8px;
+}
+.main .main_bottom .review .row .review_card .review_card__bott .review_card__circle .review_card__photo {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+.main .main_bottom .review .row .review_card .review_card__bott .review_card__title {
+  color: var(--1TCA-BLack, #212529);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.main .main_bottom .review .row .review_card .review_card__bott .review_card__undertitle {
+  color: var(--1TCA-Ash, #6F7074);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.main .main_bottom .review .review_slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.main {
+  position: relative;
+}
+.main .shop {
+  position: absolute;
+  left: -50%;
+  right: -50%;
+  padding: 70px 110px;
+  border-radius: 10px;
+  background: var(--1TCA-Blue, #006FF9);
+  background-image: url("/assets/image/back/blue_back.png");
+  bottom: -160px;
+}
+.main .shop .shop_title {
+  color: #FFF;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+.main .shop .shop_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: auto;
+  padding: 13px 0;
+  width: 200px;
+  border-radius: 2px;
+  background: #FFF;
+  color: var(--1TCA-BLack, #212529);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.8px;
 }/*# sourceMappingURL=main.css.map */

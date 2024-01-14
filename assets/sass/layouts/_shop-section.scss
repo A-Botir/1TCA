@@ -1,0 +1,36 @@
+.main{
+    position: relative;
+    .shop{
+        position: absolute;
+        left: -50%;
+        right: -50%;
+        padding: 70px 110px;
+        border-radius: 10px;
+        background: var(--1TCA-Blue, #006FF9);
+        background-image: url("/assets/image/back/blue_back.png");
+        bottom: -160px;
+        .shop_title{
+            color: #FFF;
+            text-align: center;
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 44px;
+            text-transform: capitalize;
+            margin-bottom: 40px;
+        }
+        .shop_btn{
+            @include dFlex;
+            gap: 8px;
+            margin: auto;
+            padding: 13px 0;
+            width: 200px;
+            border-radius: 2px;
+            background: #FFF;
+            color: var(--1TCA-BLack, #212529);
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+            letter-spacing: 0.8px;
+        }
+    }
+}
